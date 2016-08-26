@@ -20,6 +20,20 @@ docker run -it --rm -v /home/user/TakeABreak/files:/data cmonjeau/takeabreak -in
 
 ### Run TAkeABreak with GoDocker (http://www.genouest.org/godocker/) ###
 
-TakeABreak -h
+Create a new job with these parameters:
 
+"Container image" : cmonjeau/takeabreak
+
+"Command" :
+
+```
+
+#!/bin/bash
+
+# command line example (adapt with your data)
 TakeABreak -in $GODOCKER_HOME/data/toy_example.fasta,$GODOCKER_HOME/data/toy_example_reads.fasta -out $GODOCKER_HOME/data/result
+
+```
+
+"Mount volumes" : home(rw)
+
