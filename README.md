@@ -14,7 +14,12 @@ docker build -t cmonjeau/takeabreak .
 
 docker run -it --rm cmonjeau/takeabreak
 
-### Run TakeABreak with data (inside /home/user/discoSNP_data directory)
+### Run TakeABreak with data (inside /home/user/discoSNP_data directory) ###
 
 docker run -it --rm -v /home/user/TakeABreak/files:/data cmonjeau/takeabreak -in '/data/toy_example.fasta,/data/toy_example_reads.fasta,/data/toy_example_with_inv.fasta,/data/toy_example_with_inv_reads.fasta' -out /data/result
 
+### Run TAkeABreak with GoDocker (http://www.genouest.org/godocker/) ###
+
+TakeABreak -h
+
+TakeABreak -in $GODOCKER_HOME/data/toy_example.fasta,$GODOCKER_HOME/data/toy_example_reads.fasta -out $GODOCKER_HOME/data/result
