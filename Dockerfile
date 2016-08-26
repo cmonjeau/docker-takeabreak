@@ -10,8 +10,8 @@ FROM debian:wheezy
 ENV DEBIAN_FRONTEND noninteractive
 ENV PACKAGES wget make cmake gcc g++ zlib1g-dev
 
-ENV TAR http://colibread.inria.fr/files/2014/01/TakeABreak-1.1.0-Source.tar_.gz
-ENV SOURCE TakeABreak-1.1.0-Source
+ENV TAR https://colibread.inria.fr/files/2014/01/TakeABreak-1.1.2-Source.tar_.gz
+ENV SOURCE TakeABreak-1.1.2-Source
 ENV DIR /opt
 
 ################## DEPENDENCIES INSTALLATION ######################
